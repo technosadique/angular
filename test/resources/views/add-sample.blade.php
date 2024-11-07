@@ -10,7 +10,7 @@
     </head>
     <body>
        <h1>Add sample </h1>
-	   <form method="post" action="{{'../store'}}">
+	   <form method="post" action="{{'store'}}">
 	   <table>
 	   {{ csrf_field() }}
 	   <tr>

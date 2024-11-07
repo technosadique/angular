@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Listing</title>
-<a href="{{ '/create' }}">Add</a>
+<a href="{{ 'create' }}">Add</a>
         
     </head>
     <body>
@@ -22,7 +22,7 @@
 	   
 	   
 	   @foreach($listings as $list)
-	   <tr><td>{{ $list->id}}</td><td>{{ $list->name}}</td><td>{{ $list->state}}</td><td>{{ $list->zip}}</td><td>{{ $list->amount}}</td><td>{{ $list->qty}}</td><td>{{ $list->item}}</td><td><a href="{{'/edit/'.$list->id}}">Edit</a> | <a href="{{'/delete/'.$list->id}}">Delete</a></td></tr>
+	   <tr><td>{{ $list->id}}</td><td>{{ $list->name}}</td><td>{{ $list->state}}</td><td>{{ $list->zip}}</td><td>{{ $list->amount}}</td><td>{{ $list->qty}}</td><td>{{ $list->item}}</td><td><a href="{{'edit/'.$list->id}}">Edit</a> | <a href="{{'delete/'.$list->id}}">Delete</a></td></tr>
 	   
 	   @endforeach
 	   
